@@ -53,3 +53,15 @@ CREATE TABLE hotel
     description varchar,
     stars       number
 );
+
+CREATE TABLE bitacora_reservaciones
+(
+    id               serial primary key,
+    hotel_name       varchar,
+    room_name        varchar,
+    guest_first_name varchar,
+    guest_last_name  varchar,
+    guest_email      varchar,
+    start_date       timestamp,
+    end_date         timestamp
+);
